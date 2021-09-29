@@ -1,0 +1,15 @@
+{
+  "name": "001-electron",
+  "version": "1.0.0",
+  "description": "A cool app with my students",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paolo Cargnin",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^15.0.0"
+  }
+}

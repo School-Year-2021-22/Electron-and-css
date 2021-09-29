@@ -1,0 +1,56 @@
+/* 
+0 - Syntax
+1 - Selectors
+    - by tag name
+
+2 - values
+    Colors:    
+        name
+        HEX code
+*/
+
+body {
+    background-color: #fcba03;
+    color: blue;
+}
+
+.text-purple{
+    color: rgb(182, 32, 182);
+    font-size: 50px;
+    transition: all 1s;
+}
+
+.text-purple:hover{
+    font-size: 70px;
+    color: green;
+}
+
+.block{
+    max-width: 150px;
+    min-height: 150px;
+    background: rgb(10, 124, 161);
+    animation: blockAnimation 3s;
+    transform:  translate(200px, 100px) scale(1.5, 2) rotate(20deg);
+}
+
+@keyframes  blockAnimation{
+    0%{
+        background-color:  rgb(10, 124, 161);
+        max-width: 150px;
+        min-height: 150px;
+    }
+    20%{
+        max-width: 60px;
+        min-height: 60px;
+        background-color: red;
+    }
+    80%{
+        max-width: 180px;
+        min-height: 180px;
+        background-color: yellow;
+
+    }
+    100%{
+        background-color: purple;
+    }
+}
